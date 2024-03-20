@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando meu próprio Scratch</title>
+    <link href="./bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <button onclick="moverParaEsquerda()">Mover para esquerda</button>
+    <button onclick="moverParaDireita()">Mover para direita</button>
+    <button onclick="moverParaCima()">Mover para cima</button>
+    <button onclick="moverParaBaixo()">Mover para baixo</button>
+    <button onclick="girarHorario()">Girar sentido horario</button>
+    <button onclick="girarAntiHorario()">Girar sentido anti horario</button>
+    <button onclick="deslizarImagem()">Deslizar para frente</button>
+    <button onclick="deslizarParaDireita()">Deslizar para Direita</button>
+
+    <button onclick="">Aponte para a direção</button>
+    <button onclick="">Ir para a direção</button>
+    <button onclick="">Ir para posição aleatória</button>
+    <button onclick="">Deslizar até a posição aleatória</button>
+    <button onclick="">Seguir o mouse</button>
+    <button onclick="">Voltar ao início</button>
+    <button onclick="">"Dizer" Olá por "n" segundo(s)</button>
+    <button onclick="">Trocar o avatar</button>
+    <button onclick="">"Resetar" o avatar</button>
+    <button onclick="">Trocar o cenário</button>
+
+    <button id="myButton">Pressione para o Som</button>
+
+<audio id="myAudio">
+  <source src="som-do-zap-zap-estourado.mp3" type="audio/mpeg">
+  Seu navegador não suporta o elemento de áudio.
+</audio>
+
+
+    <br />
+    <br />
+    <label for="txtPixel">Quantidade de pixel(s):</label>
+    <input type="text" id="txtPixel" value="1"/>
+
+    <img src="./img/ryu.png" id="imgAvatar" height="350px" />
+
+    <script src="./scratch.js"></script>
+    <script src="./bootstrap.bundle.min.js"></script>
+    <script src="./popper.js"></script>
+    <script src="./all.min.js"></script>
+</body>
+</html>
